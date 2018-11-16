@@ -6,13 +6,11 @@
 /*   By: avogt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 13:59:21 by avogt             #+#    #+#             */
-/*   Updated: 2018/11/10 15:22:56 by avogt            ###   ########.fr       */
+/*   Updated: 2018/11/16 12:59:01 by avogt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <ctype.h>
 
 int		ft_isprint(int c)
 {

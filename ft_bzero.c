@@ -6,12 +6,10 @@
 /*   By: avogt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 15:12:24 by avogt             #+#    #+#             */
-/*   Updated: 2018/11/10 13:21:39 by avogt            ###   ########.fr       */
+/*   Updated: 2018/11/16 18:32:14 by avogt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <strings.h>
-#include <stdio.h>
 #include "libft.h"
 
 void	ft_bzero(void *s, size_t n)

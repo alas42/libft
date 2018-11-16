@@ -6,12 +6,11 @@
 /*   By: avogt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/10 12:46:14 by avogt             #+#    #+#             */
-/*   Updated: 2018/11/10 13:03:44 by avogt            ###   ########.fr       */
+/*   Updated: 2018/11/16 13:04:23 by avogt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
 void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))
 {

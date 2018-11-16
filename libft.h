@@ -6,14 +6,15 @@
 /*   By: avogt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 11:52:53 by avogt             #+#    #+#             */
-/*   Updated: 2018/11/13 16:30:43 by avogt            ###   ########.fr       */
+/*   Updated: 2018/11/16 18:33:17 by avogt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-# include "string.h"
-# include "stdlib.h"
+# include <string.h>
+# include <stdlib.h>
+# include <unistd.h>
 
 typedef struct		s_list
 {
@@ -57,7 +58,6 @@ void				ft_strdel(char **as);
 void				ft_strclr(char *s);
 void				ft_striter(char *s, void (*f)(char *));
 void				ft_striteri(char *s, void (*f)(unsigned int, char *));
-char				*ft_strmap(char const *s, char (*f)(char));
 char				*ft_strmap(char const *s, char (*f)(char));
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 int					ft_strequ(char const *s1, char const *s2);

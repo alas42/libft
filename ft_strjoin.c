@@ -6,14 +6,11 @@
 /*   By: avogt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/09 12:03:09 by avogt             #+#    #+#             */
-/*   Updated: 2018/11/13 16:55:16 by avogt            ###   ########.fr       */
+/*   Updated: 2018/11/16 18:28:53 by avogt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
-#include <stdio.h>
-#include <stdlib.h>
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
@@ -34,7 +31,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		if (s2 != NULL)
 			while (*s2 != '\0')
 				fresh[i++] = *(s2++);
-		fresh[i] = '\0';
 	}
+	fresh[i] = '\0';
 	return (fresh);
 }

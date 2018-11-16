@@ -6,7 +6,7 @@
 /*   By: avogt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 14:41:34 by avogt             #+#    #+#             */
-/*   Updated: 2018/11/10 15:31:03 by avogt            ###   ########.fr       */
+/*   Updated: 2018/11/16 12:54:21 by avogt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	i = 0;
 	if (size < lendest)
 		return (size + lensrc);
-	while (i < size - lendest - 1)
+	while (lendest + i < size - 1)
 	{
 		if (src[i] == '\0')
 		{

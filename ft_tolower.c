@@ -6,13 +6,11 @@
 /*   By: avogt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 14:58:08 by avogt             #+#    #+#             */
-/*   Updated: 2018/11/10 14:37:41 by avogt            ###   ########.fr       */
+/*   Updated: 2018/11/16 12:59:55 by avogt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <ctype.h>
 
 int		ft_tolower(int c)
 {

@@ -6,12 +6,11 @@
 /*   By: avogt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/09 12:23:42 by avogt             #+#    #+#             */
-/*   Updated: 2018/11/13 12:46:46 by avogt            ###   ########.fr       */
+/*   Updated: 2018/11/16 18:33:59 by avogt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static void	ft_lenni(char const *s, unsigned int *i, size_t *len)
 {
@@ -19,11 +18,6 @@ static void	ft_lenni(char const *s, unsigned int *i, size_t *len)
 		(*i)++;
 	while (s[*len - 1] == ' ' || s[*len - 1] == '\t' || s[*len - 1] == '\n')
 		(*len)--;
-	if (*i == 0 || *len == ft_strlen(s))
-	{
-		*i = 0;
-		*len = ft_strlen(s);
-	}
 }
 
 char		*ft_strtrim(char const *s)

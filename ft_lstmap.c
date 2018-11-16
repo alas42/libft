@@ -6,31 +6,34 @@
 /*   By: avogt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/10 12:49:20 by avogt             #+#    #+#             */
-/*   Updated: 2018/11/13 15:53:55 by avogt            ###   ########.fr       */
+/*   Updated: 2018/11/16 18:31:48 by avogt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
+
+static void	ft_lstpushback(t_list **lst, t_list *elem)
+{
+	while (*lst)
+		lst = &(*lst)->next;
+	*lst = elem;
+}
 
 t_list		*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {
 	t_list	*new_lst;
-	t_list	*ptr_list;
+	t_list	*piece;
 
+	piece = NULL;
 	new_lst = NULL;
-	if (!(new_lst = (t_list *)malloc(sizeof(t_list))))
-	{
-		free(new_lst);
-		return (NULL);
-	}
-	ptr_list = new_lst;
 	while (lst)
 	{
-		new_lst->next = f(lst);
+		piece = f(lst);
+		if (piece != NULL)
+			ft_lstpushback(&new_lst, piece);
+		else
+			return (NULL);
 		lst = lst->next;
-		new_lst = new_lst->next;
 	}
-	new_lst = ptr_list;
 	return (new_lst);
 }

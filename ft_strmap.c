@@ -6,12 +6,10 @@
 /*   By: avogt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 18:04:29 by avogt             #+#    #+#             */
-/*   Updated: 2018/11/13 16:00:23 by avogt            ###   ########.fr       */
+/*   Updated: 2018/11/16 18:28:28 by avogt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_strmap(char const *s, char (*f)(char))

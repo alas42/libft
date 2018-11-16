@@ -6,12 +6,10 @@
 /*   By: avogt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 15:24:33 by avogt             #+#    #+#             */
-/*   Updated: 2018/11/10 13:23:51 by avogt            ###   ########.fr       */
+/*   Updated: 2018/11/16 18:32:22 by avogt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
 #include "libft.h"
 
 void	*ft_memcpy(void *dst, void const *src, size_t n)
