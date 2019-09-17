@@ -6,7 +6,7 @@
 /*   By: avogt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 13:08:17 by avogt             #+#    #+#             */
-/*   Updated: 2018/11/16 12:55:34 by avogt            ###   ########.fr       */
+/*   Updated: 2018/11/23 15:25:57 by avogt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,9 @@ int		ft_atoi(const char *str)
 {
 	int	sign;
 	int	result_tmp;
+	int i;
 
+	i = 0;
 	result_tmp = 0;
 	sign = 1;
 	while (*str == ' ' || *str == '\n' || *str == '\t' ||
