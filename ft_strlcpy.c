@@ -1,39 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstmap.c                                        :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: avogt <avogt@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/10 12:49:20 by avogt             #+#    #+#             */
-/*   Updated: 2019/11/06 21:35:19 by avogt            ###   ########.fr       */
+/*   Created: 2019/11/06 20:46:10 by avogt             #+#    #+#             */
+/*   Updated: 2019/11/06 22:21:13 by avogt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static void	ft_lstpushback(t_list **lst, t_list *elem)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-	while (*lst)
-		lst = &(*lst)->next;
-	*lst = elem;
-}
+	size_t	i;
+	size_t	lendst;
+	size_t	lensrc;
 
-t_list		*ft_lstmap(t_list *lst, t_list *(*f)(void *), void (*del)(void *))
-{
-	t_list	*new_lst;
-	t_list	*piece;
-
-	piece = NULL;
-	new_lst = NULL;
-	while (lst)
+	lensrc = ft_strlen(src);
+	lendst = ft_strlen(dst);
+	i = 0;
+	while (i < dstsize - 1)
 	{
-		piece = f(lst);
-		if (piece != NULL)
-			ft_lstpushback(&new_lst, piece);
-		else
-			del(piece);
-		lst = lst->next;
+		if (src[i] == '\0')
+		{
+			dst[i] = src[i];
+			return (lensrc);
+		}
+		dst[i] = src[i];
+		i++;
 	}
-	return (new_lst);
+	dst[i] = '\0';
+	return (lensrc);
 }

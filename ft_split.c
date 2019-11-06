@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strsplit.c                                      :+:      :+:    :+:   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: avogt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/09 12:53:59 by avogt             #+#    #+#             */
-/*   Updated: 2018/11/16 18:33:48 by avogt            ###   ########.fr       */
+/*   Created: 2019/11/06 20:27:31 by avogt             #+#    #+#             */
+/*   Updated: 2019/11/06 22:13:18 by avogt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,7 @@ static int	ft_strmall(char **tab, const char *s, char c)
 	return (1);
 }
 
-char		**ft_strsplit(char const *s, char c)
+char		**ft_split(char const *s, char c)
 {
 	char			**tab;
 	unsigned int	n_word;

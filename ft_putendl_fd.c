@@ -6,13 +6,13 @@
 /*   By: avogt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/09 16:15:05 by avogt             #+#    #+#             */
-/*   Updated: 2018/11/16 13:03:34 by avogt            ###   ########.fr       */
+/*   Updated: 2019/11/06 22:16:17 by avogt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putendl_fd(char const *s, int fd)
+void	ft_putendl_fd(char *s, int fd)
 {
 	if (s != NULL)
 	{
