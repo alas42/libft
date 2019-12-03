@@ -6,7 +6,7 @@
 #    By: avogt <marvin@42.fr>                       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/07 11:51:18 by avogt             #+#    #+#              #
-#    Updated: 2019/11/06 22:02:25 by avogt            ###   ########.fr        #
+#    Updated: 2019/12/03 08:59:12 by avogt            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -53,7 +53,7 @@ bonus : $(OBJ_BONUS)
 	ranlib $(NAME)
 
 clean : 
-	rm -fv $(OBJ)
+	rm -fv $(OBJ) $(OBJ_BONUS)
 
 fclean:	clean
 	rm -fv $(NAME)
