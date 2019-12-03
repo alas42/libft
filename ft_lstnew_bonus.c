@@ -6,11 +6,11 @@
 /*   By: avogt <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/09 17:58:47 by avogt             #+#    #+#             */
-/*   Updated: 2019/11/06 21:45:44 by avogt            ###   ########.fr       */
+/*   Updated: 2019/12/03 09:33:32 by avogt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "libft_bonus.h"
 
 t_list	*ft_lstnew(void *content)
 {
